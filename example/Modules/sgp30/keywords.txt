@@ -1,0 +1,31 @@
+#######################################
+# Syntax Coloring Map sgp30
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+sgp30	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+SGP30_I2c_Write_Cmd	KEYWORD2
+SGP30_I2c_Read	KEYWORD2
+SGP30_Soft_Reset	KEYWORD2
+SGP30_Init	KEYWORD2
+CheckCrc8	KEYWORD2
+SGP30_Get_Value	KEYWORD2
+get_co2_val	KEYWORD2
+get_tvoc_val	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+SGP30_ADDR	LITERAL1
+SGP30_SOFT_RESET_CMD	LITERAL1
+SGP30_INIT_AIR_QUALITY	LITERAL1
+SGP30_MEASURE_AIR_QUALITY	LITERAL1
+SGP30_CRC8_POLYNOMIAL	LITERAL1

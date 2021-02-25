@@ -1,0 +1,43 @@
+#######################################
+# Syntax Coloring Map SPI
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+IP5306	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+get_data	KEYWORD2
+Ip5306_Check_Power	KEYWORD2
+readByte	KEYWORD2
+Ip5306_Check_Charge	KEYWORD2
+Ip5306_Check_Full	KEYWORD2
+writeByte	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+IP5306_I2C_SCL_IO	LITERAL1
+IP5306_I2C_SDA_IO	LITERAL1
+IP5306_I2C_MASTER_NUM	LITERAL1
+IP5306_ADDR 	LITERAL1
+IP5306_CHECK_POWER	LITERAL1
+IP5306_CHECK_CHANGE	LITERAL1
+IP5306_CHECK_FULL 	LITERAL1
+
+
+
+
+
+
+
+
+
+
+
+
