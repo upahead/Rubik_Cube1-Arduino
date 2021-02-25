@@ -1,8 +1,8 @@
-# Rubic_Cube Library
+# Rubic_Cube1-Arduino Library
 
 Welcome to program with Rubic_Cube Core
 
-#### Note:
+## Note:
 
 * How to Use
 	Copy this file to the libraries folder in the Arduino installation directory to load normally
