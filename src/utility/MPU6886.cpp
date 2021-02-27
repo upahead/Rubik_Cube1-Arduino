@@ -108,7 +108,6 @@ int I2C_MPU6886::begin(void) {
   */
 void I2C_MPU6886::getAccel(float* ax, float* ay, float* az) {
   float aRes = 8.0 / 32768.0;
-  MPU6886getAres(&aRes,2);
   *ax = (int16_t)((readByte(MPU6886_ACCEL_XOUT_H) << 8) | readByte(MPU6886_ACCEL_XOUT_L)) * aRes;
   *ay = (int16_t)((readByte(MPU6886_ACCEL_YOUT_H) << 8) | readByte(MPU6886_ACCEL_YOUT_L)) * aRes;
   *az = (int16_t)((readByte(MPU6886_ACCEL_ZOUT_H) << 8) | readByte(MPU6886_ACCEL_ZOUT_L)) * aRes;
@@ -123,7 +122,6 @@ void I2C_MPU6886::getAccel(float* ax, float* ay, float* az) {
   */
 void I2C_MPU6886::getGyro(float* gx, float* gy, float* gz) {
   float gRes = 2000.0 / 32768.0;
-  MPU6886getGres(&gRes,3);
   *gx = (int16_t)((readByte(MPU6886_GYRO_XOUT_H) << 8) | readByte(MPU6886_GYRO_XOUT_L)) * gRes;
   *gy = (int16_t)((readByte(MPU6886_GYRO_YOUT_H) << 8) | readByte(MPU6886_GYRO_YOUT_L)) * gRes;
   *gz = (int16_t)((readByte(MPU6886_GYRO_ZOUT_H) << 8) | readByte(MPU6886_GYRO_ZOUT_L)) * gRes;

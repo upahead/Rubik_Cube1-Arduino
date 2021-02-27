@@ -1,5 +1,6 @@
 # Rubic_Cube1-Arduino Library
 Welcome to program with Rubic_Cube Core
+***Rubik_ Cube. H contains all. H files in utility***
 
 ## Note:
 * How to Use  
