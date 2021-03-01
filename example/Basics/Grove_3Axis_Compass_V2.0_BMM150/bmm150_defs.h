@@ -24,7 +24,7 @@
 #define BMM150_W_NORMAL_SELF_TEST_XYZ_FAIL	INT8_C(7)
 #define BMM150_W_ADV_SELF_TEST_FAIL		INT8_C(8)
 
-#define BMM150_I2C_Address  0x13
+#define BMM150_I2C_Address  0x10
 
 /**\name CHIP ID & SOFT RESET VALUES      */
 #define BMM150_CHIP_ID              0x32
