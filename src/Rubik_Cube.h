@@ -1,6 +1,6 @@
 /*****************************************************************************
  *                                                                           *
- *  Copyright 2021 upahead                                                   *
+ *  Copyright 2021 upahead                                          *
  *                                                                           *
  *  Licensed under the Apache License, Version 2.0 (the "License");          *
  *  you may not use this file except in compliance with the License.         *
@@ -31,5 +31,7 @@
 #include "utility/sgp30.h"
 #include "utility/sk6812_driver.h"
 #include "utility/tcs34725_driver.h"
+#include "utility/TFT_eSPI/TFT_eSPI.h"
+#include "utility/esp32_digital_led_lib.h"
 #endif
 
