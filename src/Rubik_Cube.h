@@ -33,5 +33,6 @@
 #include "utility/tcs34725_driver.h"
 #include "utility/TFT_eSPI/TFT_eSPI.h"
 #include "utility/esp32_digital_led_lib.h"
+#include "utility/FT6336U.h"
 #endif
 

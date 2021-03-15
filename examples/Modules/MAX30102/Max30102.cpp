@@ -586,7 +586,7 @@ uint8_t MAX30102::available(void)
 /**
   * @brief  得到最近一次测量的红色值
   * @parameter void
-  * @retval void
+  * @retval 测量的红色值
   */
 uint32_t MAX30102::getRed(void)
 {
@@ -600,7 +600,7 @@ uint32_t MAX30102::getRed(void)
 /**
   * @brief  得到最近一次测量的红外值
   * @parameter void
-  * @retval void
+  * @retval 测量的红外值
   */
 uint32_t MAX30102::getIR(void)
 {
@@ -863,6 +863,8 @@ void MAX30102::caldata(double *avered,double *aveir,double *sumirrms,double *sum
   * @parameter sumirrms:  指向数据sumirrms的指针
   * @parameter sumredrms:  指向数据sumredrms的指针
   * @parameter ir:  红外值
+  * @parameter SpO2: 指向血氧饱和度数据的指针
+  * @parameter ESpO2:  指向平均血氧饱和度数据的指针
   * @retval  void
   */
 void MAX30102::get_ESPO2(int32_t ir, double *avered,double *aveir,double *sumirrms,double *sumredrms, double *SpO2, double *ESpO2)
@@ -884,10 +886,10 @@ void MAX30102::get_ESPO2(int32_t ir, double *avered,double *aveir,double *sumirr
 
 /**
   * @brief  得到心率和平均心率
-  * @parameter irValue:  红外值
+  * @parameter irValue:  指向红色值的指针
   * @parameter beatAvg:  指向平均心率的指针
   * @parameter beatsPerMinute:  指向心率的指针
-  * @retval  void
+  * @retval  成功返回true，失败返回false
   */
 bool MAX30102::get_avgBPM(int32_t *irValue,  int *beatAvg, float *beatsPerMinute)
 {
